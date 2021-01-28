@@ -11,6 +11,7 @@ The syntax of this assembly language is designed to make it easier to read and w
 g++ ASMulator.cpp
 ./a.out
 ```
+![image](https://drive.google.com/uc?export=view&id=1t4kcol8IQIz6abX6YQRYEBTo52fCM04T)
 
 
 ## Supported Assembly Instructions
