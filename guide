@@ -1,0 +1,57 @@
+The CPU is where all the work gets done, the memory is where all the code and data is stored;
+While memory stores the program and the data, the Central Processing Unit does all the work;
+The CPU has two parts — registers and an Arithmetic Logic Unit (ALU);
+A register is like the temporary memory. Each register can usually hold one word - 4 bytes;
+
++-----------------------------------------------------------------+
+|		        Note that:                                
+|***I assumed sizeof(int) is 4 bytes on your compiler too (!);        
+|***Each assembly instruction must be:                                
+|		LOAD                                              
+|		STORE                                             
+|		ALU                                               
+|***EVERY Assembly instruction MUST END with SEMICOLON;               
++-----------------------------------------------------------------+
+				
+------------------List of all supported commands-------------------
+
+Rx - accesses the information that is stored in xth register
+Special Purpose Registers:
+PC - stores the address of next instruction that should be executed. 
+     stands for Program Counter
+SP - stores lowest memory address that is relevant to execution. 
+     stands for Stack Pointer
+RV - stores the value that should be returned. 
+     stands for Return Value
+
+M[x] - accesses memory at the address x (constant, register+constant)
+Branch commands - "BEQ/BNE/BGE/BGT/BLE/BLT arg1, arg2, PC + x" 
+	        where x is number of bytes it must skip if the branch 
+                  expression evaluates to true.
+ 
+JMP - "JMP PC - x;" where x is the number of bytes of instructions that 
+                    must be skipped. 
+      "JMP x;" where x is the absolute constant address in instructions set.
+
+CALL - "CALL <x>;" where x is the name of the function that should be called.
+
+ALU: Basic arithmetic operations - "+", "-", "*", "/" - work only on integers.
+
+Cast command - To move less than a whole word at a time, 
+               use the variants “=.1” (1 byte) and “=.2” (2 bytes).
+	     ".x" followed by any memory(Ry/M[y]/y) or constant.
+
+DEFINE -"DEFINE <x>;"  where x is the name of the function you want to define. 
+                       followed by the body and END_DEF; command(!).
+
+RET -   ends the function. it's a must at the end of every defined function(!).
+
+PRINT - "PRINT <x>;" where x is Ry or M[y] or y. evaluates x and prints it in console. 
+         works with cast commands (.1 , .2) and for unsigned integers ($U) 
+         example: PRINT<$U .2 R3>;
+RESET - resets instructions, registers, PC and SP values.
+
+I've provided some examples (for further information check folder "examples")
+type in command line :
+	-f
+	examples/alu

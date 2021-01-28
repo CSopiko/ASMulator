@@ -1,0 +1,17 @@
+DEFINE <STORE>;
+SP = SP - 4;
+M[SP] = 5;
+SP = SP - 4;
+R1 = SP + 4;
+M[SP] = R1;
+R2 = M[SP];
+M[R2] = 7;
+R1 = SP + 4;
+R1 = M[R1];
+RV = R1;
+SP = SP + 4;
+SP = SP + 4;
+RET;
+END_DEF;
+CALL <STORE>;
+PRINT <RV>;
