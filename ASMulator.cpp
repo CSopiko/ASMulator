@@ -11,7 +11,6 @@
 
 using namespace std;
 
-//ASSEMU
 #define STACK_SIZE_ 32768 //some power of 2
 #define MAX_N_REGISTERS 8180
 #define AMULATOR_COMMAND_LINE ">_< #: "           // for lineNum
@@ -31,7 +30,6 @@ using namespace std;
 #define DISPLAY_MEMORY "-rg"
 #define COMMAND_EXIT "exit"
 #define COMMAND_GUIDE "guide"
-#define WELCOME "Privet" //file name
 
 //special registers
 #define SP "SP"
