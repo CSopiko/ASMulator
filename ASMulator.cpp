@@ -972,7 +972,7 @@ bool execute_line(string &str){
         printf(ANSI_COLOR_GREEN "TYPE DETECTED: " ANSI_COLOR_RESET "STORE\n" );
         execute_store(str);
     }else if(type == ASSIGNMENT){
-        printf(ANSI_COLOR_GREEN "TYPE DETECTED: " ANSI_COLOR_RESET "STORE-ASSIGNMENT\n" );
+        printf(ANSI_COLOR_GREEN "TYPE DETECTED: " ANSI_COLOR_RESET "ALU\n" );
         execute_assignment(str);
     }
     else if(type == BRANCH){
