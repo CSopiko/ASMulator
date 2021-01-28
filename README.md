@@ -18,7 +18,7 @@ git clone https://github.com/CSopiko/ASMulator.git
 g++ ASMulator.cpp
 ./a.out
 ```
-![image](https://drive.google.com/uc?export=view&id=1t4kcol8IQIz6abX6YQRYEBTo52fCM04T)
+![](https://ibb.co/k3hky6h)
 
 
 ## Supported Assembly Instructions
