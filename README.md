@@ -1,2 +1,2 @@
 # ASMulator
-Asssembly Emulator - Bonus assignment for Programming Paradigms course (CS107)
+Assembly Emulator - Bonus assignment for Programming Paradigms course (CS107)
