@@ -19,7 +19,7 @@ g++ ASMulator.cpp
 ./a.out
 ```
 ## View
-![asmulator](https://github.com/CSopiko/ASMulator/blob/main/asmulator.png)
+<img src="https://github.com/CSopiko/ASMulator/blob/main/asmulator.png" width="362" height="234" >
 
 ## Supported Assembly Instructions
 - Load/Store \
