@@ -18,7 +18,8 @@ git clone https://github.com/CSopiko/ASMulator.git
 g++ ASMulator.cpp
 ./a.out
 ```
-
+## View
+![asmulator](https://github.com/CSopiko/ASMulator/blob/main/asmulator.png)
 
 ## Supported Assembly Instructions
 - Load/Store \
